@@ -8,31 +8,38 @@ body {
 
 h1,
 h2,
-h3 {
-    margin: 0;
-}
-
+h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }
 
 img {
     display: block;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
 }
-
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    
+    padding: 0 16px;
     margin: 0 auto;
 }
 
+/* =============HEADER=============== */
+
 .menu-page .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
@@ -40,7 +47,7 @@ a {
 .menu-nav {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    margin-right: 76px;
 }
 
 .link {
@@ -50,7 +57,7 @@ a {
 .page-nav .link.first {
     position: relative;
     color: #404bbf;
-}
+} 
 
 .menu-page {
     background: #fff;
@@ -86,7 +93,7 @@ a {
     display: flex;
     gap: 40px;
     list-style-type: none;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 
 .menu-page .logo {
@@ -158,6 +165,11 @@ a {
     color: #404bbf;
 }
 
+
+/* ============================================ */
+
+/*================ SECTION 1 ==================== */
+
 .main-page-btn {
     background-color: #4d5ae5;
     color: #fff;
@@ -194,13 +206,13 @@ a {
 
 .main-page-text {
     background: #2e2f42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -214,11 +226,16 @@ a {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     display: block;
     margin: auto;
     max-width: 496px;
 }
+
+/* ======================================== */
+
+/*============= SECTION================ 2 */
+
 
 .container-text {
     padding-top: 120px;
@@ -243,19 +260,7 @@ ul {
     overflow: hidden;
 }
 
-.list-block {
-    flex-basis: calc((100% - 72px) / 4);
-}
 
-.container-text-title {
-    color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    margin-top: 8px;
-}
 
 .container-text-list {
     background-color: #ffffff;
@@ -265,6 +270,10 @@ ul {
     justify-content: center;
     flex-shrink: 0;
     gap: 24px;
+}
+
+.list-block {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .icon-list {
@@ -281,11 +290,25 @@ ul {
     flex-shrink: 0;
 }
 
+.container-text-title {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
 .container-text-descr {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* ======================================= */
+
+/* =========SECTION 3===================== */
 
 .sector-team-company {
     background: #f4f4fd;
@@ -387,6 +410,10 @@ ul {
     fill: #f4f4fd;
 }
 
+/* =============================================== */
+
+/* =============SECTION 4========================== */
+
 .sector-portfolio-company {
     background: #fff;
     padding-top: 120px;
@@ -481,6 +508,10 @@ ul {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+
+/* ============================================== */
+/* =========FOOTER=============================== */
+
 .sector-contacts-company {
     background: #2E2F42;
     padding: 100px 0;
@@ -552,7 +583,6 @@ ul {
 
 }
 
-
 .footer-form-input {
     background-color: #2E2F42;
     width: 264px;
@@ -602,7 +632,10 @@ ul {
     fill: #FFFFFF;
 }
 
-/* ++++++++++++modal bd ++++++++++++*/
+/* ==================================== */
+
+/* ===========BACKDROUP================= */
+
 .backdroup {
     margin-left: auto;
     margin-right: auto;
@@ -618,7 +651,6 @@ ul {
 .backdroup.is-open {
     display: block;
 }
-
 
 
 .modal {
