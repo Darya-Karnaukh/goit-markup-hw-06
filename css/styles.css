@@ -526,9 +526,9 @@ ul {
     display: flex;
     align-items: baseline;
 }
-.text-footer {
+/* .text-footer {
     margin-right: 120px;
-}
+} */
 
 .text-contacts-company {
     color: #f4f4fd;
