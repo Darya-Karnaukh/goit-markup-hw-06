@@ -257,22 +257,30 @@ ul {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   padding: 72px 16px 16px 16px;
   overflow: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   transform: translateY(100%);
 }
 
-/* .mobile-menu.is-open {
-    transform: translateY(0);
-} */
+@media screen and(min-width: 320px) {
+  .mobile-menu {
+    width: 320px;
+    height: fit-content;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateY(0);
+  display: block;
+}
 
 .button-close {
   position: absolute;
